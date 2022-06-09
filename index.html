@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Procesos Batch FV</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Recuerda<span>Eso</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+
+            <nav>
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Inicio</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Precios</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contactos</a></li>
+                    <li class="go-premium-cta"><a href="#">Ir Premium</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+
+            <div class="left-col">
+                <p class="subhead">Es Bueno &amp; Valiente</p>
+                <h1>Una App de Tareas Que No Da Pena</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Pruébalo Gratis</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Imagen vista">Mira un video
+                    </a>
+                </div>
+            </div>
+
+            <img src="images/illustration.svg" class="hero-img" alt="Ilustracion">
+
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Tareas Sin Limites</li>
+                <li>Tarea Recepción de SMS</li>
+                <li>Explosión de Confetti al Completar la Tarea</li>
+                <li>Anuncio en Redes Sociales</li>
+                <li>Colaboración en Tiempo Real</li>
+                <li>Otras Características Asombrosas</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Solteniendo celular">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.png" alt="Persona">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero impedit voluptatibus similique nihil pariatur? Beatae architecto tenetur amet nulla dolorum neque atque provident minima veniam harum nobis commodi, voluptate consequatur.
+                    </blockquote>
+                    <cite>Keanu Reeves</cite>
+                </li>
+                <li>
+                    <img src="images/person.png" alt="Persona">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium explicabo laboriosam obcaecati error molestiae dolorem possimus, voluptates inventore, ipsum recusandae laborum quo nulla! Quas quo quam, sint neque sequi dolore.</blockquote>
+                    <cite>Reanu Reeves</cite>
+                </li>
+                <li>
+                    <img src="images/person.png" alt="Persona">
+                    <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, sapiente nisi deserunt possimus illo obcaecati blanditiis, delectus doloribus magni, fugiat voluptatum in fuga repellat? Vitae doloremque voluptatum ut eveniet blanditiis?</blockquote>
+                    <cite>Keanu Reeves</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contactos</h2>
+
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Mensaje</label>
+                    <textarea type="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Enviar mensaje">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7799.620801806106!2d-76.94347537803142!3d-12.193300628648325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b93fe0930683%3A0x37d1ec59a9260e6c!2sLana%20Villa%2C%20Cercado%20de%20Lima!5e0!3m2!1ses!2spe!4v1620337572097!5m2!1ses!2spe" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit')
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+</body>
+</html>
