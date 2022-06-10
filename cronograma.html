@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+     <!-- MDB icon -->
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+     <!-- Font Awesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     />
+     <!-- Google Fonts Roboto -->
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+     />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
     <title>Cronograma</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -52,10 +66,30 @@
                 <td>Tarde:<br>16:00 - 24:00</td>
             </tr>
         </table>
-        <button>Ver actividades</button>
         <button>Menú principal</button>
     </section>
-    
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+    Ver actividades
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ver actividades</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="">Nombre del proceso:</label><input type="text" value="Sellado"qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <style>
         table{
             border-collapse: collapse;
@@ -64,6 +98,9 @@
             border: 1px solid black;
             padding: 8px;
         }
+        
     </style>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>
