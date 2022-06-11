@@ -5,12 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Mi perfil de usuario</title>
+     <!-- MDB icon -->
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+     <!-- Font Awesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     />
+     <!-- Google Fonts Roboto -->
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+     />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="navbar">
         <div class="container">
-            <a class="logo" href="#">Sistema<span>Producción</span></a>
+            <a class="logo" href="index.html">Sistema<span>Producción</span></a>
 
             <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
 
@@ -20,7 +34,7 @@
 
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Perfil de usuario</a></li>
-                    <li><a href="#">Cronograma de producción</a></li>
+                    <li><a href="cronograma.html">Cronograma de producción</a></li>
                     <li><a href="#">Reporte de fallas</a></li>
                 </ul>
 
@@ -32,23 +46,35 @@
             </nav>
         </div>
     </div>
-
-    <section>
-        <h2>Mi perfil de usuario</h2>
-        <form>
-            <label for="">Nombres:</label><input type="text" value="Juan"><br>
-            <label for="">Apellidos:</label><input type="text" value="Perez"><br>
-            <label for="">Cargo:</label><input type="text" value="Operario"><br>
-            <label for="">Código:</label><input type="text" value="P17945"><br>
-            <label for="">Dirección:</label><input type="text" value="Av. Habich 123 - SMP"><br>
-            <label for="">DNI:</label><input type="text" value="18273940"><br>
-            <label for="" >E-mail:</label><input type="text" value="jperez@gmail.com"><br>
-            <label for="" >Celular:</label><input type="text" value="975461564"><br>
-        </form>
-        <figure>
-            <img src="images/person.png" alt="foto de perfil">
-            <button>Subir imagen</button>
-        </figure>
+    <h2 style="text-align: center; margin-top: 20px;">Mi perfil de usuario</h2>
+    <section class="usuperfil">
+        <div class="usudatos">
+            <form>
+                <label for="">Nombres:</label><input type="text" value="Juan"><br>
+                <label for="">Apellidos:</label><input type="text" value="Perez"><br>
+                <label for="">Cargo:</label><input type="text" value="Operario"><br>
+                <label for="">Código:</label><input type="text" value="P17945"><br>
+                <label for="">Dirección:</label><input type="text" value="Av. Habich 123 - SMP"><br>
+                <label for="">DNI:</label><input type="text" value="18273940"><br>
+                <label for="" >E-mail:</label><input type="text" value="jperez@gmail.com"><br>
+                <label for="" >Celular:</label><input type="text" value="975461564"><br>
+            </form>
+        </div>
+        <div class="imgperfil">
+            <figure>
+                <img src="images/person.png" alt="foto de perfil" style="width: 300px;">
+                <br><br><button type="button" class="btn btn-primary btn-sm">Subir imagen</button>
+            </figure>
+        </div>
     </section>
+    <style>
+        .usuperfil{
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+    </style>
+     <!-- MDB -->
+     <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>

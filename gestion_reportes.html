@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Reportes</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/gereportes.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Sistema<span>Producción</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+
+            <nav>
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="./gestion_reportes.html">Gestion de Reportes</a></li>
+                    <li><a href="#">Elaborar Cronograma</a></li>
+                    <li><a href="#">Elaborar reporte</a></li>
+                    <li><a href="./gestion_datos.html">Gestion de datos</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="user-jefe">
+        <h1>Hola Jonathan</h1>
+    </div>
+    
+    <div class="container">
+        <div class="section-1">
+            <h2>Reporte de produccion</h2>
+            <br>
+            <img src="https://www.leanmanufacturingweb.com/wp-content/uploads/2020/07/Diagrama-de-Gantt-1024x847.jpg" width="341" height="341" title="ver cronograma" alt="Gantt">
+            <br>
+            <button id="btn-abrir-popup" class="btn-abrir-popup">Ver Reporte de produccion</button>
+        </div>
+        <div class="section-2">
+            <h2>Reporte de Fallas</h2>
+            <br>
+            <img src="https://blog.comparasoftware.com/wp-content/uploads/2020/09/Fallas_enel_mantenimiento.png" width="341" height="341" title="ver reporte falla" alt="optimizacion">
+            <br>
+            <button id="btn-abrir-falla" class="btn-abrir-falla">Ver Reporte de fallas</button>
+        </div>
+
+    </div>
+    <div class="overlay" id="overlay">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <div class="popup" id="popup">
+            <h3>Reporte de producción</h3>
+            <div id="tabla-produccion">
+                <table class="productable">
+                    <thead>
+                        <tr>
+                            <th>Código</th><th>Descripcion</th><th>area</th><th>maquinaria</th><th>fecha</th><th>hora_inicio</th><th>hora_fin</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>P01-235</th><th>Enchapado</th><th>B04</th><th>MQ0-123</th><th>10-06-2022</th><th>12:05</th><th>12:20</th>
+                    </tr>
+                    <tr>
+                        <th>P01-215</th><th>Troquelado</th><th>B04</th><th>MQ0-535</th><th>10-06-2022</th><th>11:05</th><th>12:20</th>
+                    </tr>
+                    <tr>
+                        <th>P01-531</th><th>Proceso de coloque disco de alumino</th><th>B03</th><th>MQ0-612</th><th>09-06-2022</th><th>12:13</th><th>12:17</th>
+                    </tr>
+                    <tr>
+                        <th>P01-111</th><th>Barnizado</th><th>B05</th><th>MQ0-012</th><th>09-06-2022</th><th>08:05</th><th>09:20</th>
+                    </tr>
+                </table>
+            </div>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Código">
+                </div>
+                <button id="btn-modificar" class="btn-modificar">Modificar</button>
+            </form>
+        </div>
+        <div class="modifier" id="modifier">
+            <a href="#" id="btn-cerrar-mod" class="btn-cerrar-mod"><i class="fas fa-times"></i></a>
+            <div class="pop-mod" id="pop-mod">
+                <h2>Modificar produccion</h2>
+                <input class="controls" type="text" name="Operario" id="nombres" placeholder="Ingrese nombre operario">
+                <input class="controls" type="text" name="Fecha" id="fecha" placeholder="Ingrese fecha inicio ">
+                <input class="controls" type="text" name="hora-inicio" id="hora-inicio" placeholder="Ingrese hora de inicio">
+                <input class="controls" type="text" name="hora-fin" id="hora-fin" placeholder="Ingrese hora de fin">
+                <input class="botons" type="submit" value="Registrar">
+            </div>
+                
+        </div>
+    </div>
+    <div class="rep-falla" id="rep-falla">
+        <a href="#" id="btn-cerrar-falla" class="btn-cerrar-falla"><i class="fas fa-times"></i></a>
+        <div class="pop-falla" id="pop-falla">
+            <h3>Reporte de fallas</h3>
+            <div id="tabla-produccion">
+                <table class="productable">
+                    <thead>
+                        <tr>
+                            <th>Código</th><th>Descripcion</th><th>area</th><th>maquinaria</th><th>Operario</th><th>Observacion</th><th>fecha</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>RP1-235</th><th>Maquina no regista productos</th><th>B04</th><th>MQ0-123</th><th>Rafael Larios</th><th><button>Ver detalles</button></th><th>10-04-22</th>
+                    </tr>
+                    <tr>
+                        <th>RP1-124</th><th>Maquina no funciona</th><th>B04</th><th>MQ0-145</th><th>Daniel Llanos</th><th><button>Ver detalles</button></th><th>12-04-22</th>
+                    </tr>
+                    <tr>
+                        <th>RP1-248</th><th>Maquina desperdicia materia prima</th><th>B06</th><th>MQ0-677</th><th>Jorge Canarias</th><th><button>Ver detalles</button></th><th>11-04-22</th>
+                    </tr>
+                    <tr>
+                        <th>RP1-315</th><th>Maquina con excesiva merma</th><th>B05</th><th>MQ0-186</th><th>Jorge Berrocal</th><th><button>Ver detalles</button></th><th>20-04-22</th>
+                    </tr>
+                </table>
+            </div>
+            <form action="">
+                <div class="contenedor-entrada">
+                    <input type="text" placeholder="Código">
+                </div>
+                <button id="visar" class="visar">Aprobar Reporte</button>
+                <button id="rechazar-visa" class="rechazar-visa">Rechazar Reporte</button>
+            </form>
+        </div>
+        <div class="no-visar" id="no-visar">
+            <a href="#" id="btn-cerrar-visa" class="btn-cerrar-visa"><i class="fas fa-times"></i></a>
+            <div class="pop-visa" id="pop-visa">
+                <h2>Modificar produccion</h2>
+                <input class="controls" type="text" name="Operario" id="nombres" placeholder="MAQUINA NO REGISTA PRODUCTOS" disabled>
+                <h5>Ingrese Observación de rechazo</h5>
+                <textarea class="text-area" placeholder="Ingrese observación"></textarea>
+                <input class="botons" type="submit" value="Registrar">
+            </div>
+                
+        </div>
+    </div>
+    
+    
+    <script>
+        var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+        	overlay = document.getElementById('overlay'),
+        	popup = document.getElementById('popup'),
+        	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+
+        btnAbrirPopup.addEventListener('click', function(){
+	        overlay.classList.add('active');
+	        popup.classList.add('active');
+        });
+
+        btnCerrarPopup.addEventListener('click', function(e){
+	        e.preventDefault();
+	        overlay.classList.remove('active');
+	        popup.classList.remove('active');
+        });
+
+        var btnAbrirmod = document.getElementById('btn-modificar'),
+        	modifier = document.getElementById('modifier'),
+        	pop_mod = document.getElementById('pop-mod'),
+        	btnCerrarmod = document.getElementById('btn-cerrar-mod');
+
+        btnAbrirmod.addEventListener('click', function(){
+	        modifier.classList.add('active');
+	        pop_mod.classList.add('active');
+        });
+
+        btnCerrarmod.addEventListener('click', function(p){
+	        p.preventDefault();
+	        modifier.classList.remove('active');
+	        pop_mod.classList.remove('active');
+        });
+
+        var btnAbrirFalla = document.getElementById('btn-abrir-falla'),
+        	rep_falla = document.getElementById('rep-falla'),
+        	pop_falla = document.getElementById('pop-falla'),
+        	btnCerrarFalla = document.getElementById('btn-cerrar-falla');
+
+        btnAbrirFalla.addEventListener('click', function(){
+	        rep_falla.classList.add('active');
+	        pop_falla.classList.add('active');
+        });
+
+        btnCerrarFalla.addEventListener('click', function(e){
+	        e.preventDefault();
+	        rep_falla.classList.remove('active');
+	        pop_falla.classList.remove('active');
+        });
+
+        var btnAbrirVisa = document.getElementById('rechazar-visa'),
+        	no_visar = document.getElementById('no-visar'),
+        	pop_visa = document.getElementById('pop-visa'),
+        	btnCerrarVisa = document.getElementById('btn-cerrar-visa');
+
+        btnAbrirVisa.addEventListener('click', function(){
+	        no_visar.classList.add('active');
+	        pop_visa.classList.add('active');
+        });
+
+        btnCerrarVisa.addEventListener('click', function(e){
+	        e.preventDefault();
+	        no_visar.classList.remove('active');
+	        pop_visa.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

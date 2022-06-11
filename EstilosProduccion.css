@@ -1,0 +1,50 @@
+
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+section, footer, nav, header{
+    border: 1px solid black;
+}
+.tituloReporte h1{
+    background: rgb(0, 122, 243);
+    color: aliceblue;
+}
+.tituloReporte h2{
+   padding: 10px;
+}
+nav{
+    text-align: center;
+    background: #cbd6e9;
+}
+.menu li{
+list-style: none;
+padding: 5px;
+font: bold 14px verdana;
+display: inline-block; 
+text-align: center;
+}
+.guardarReporte {
+    text-align: right;
+    padding: 5px;
+}
+.PaginaAnterior{
+    text-align: left;
+    padding: 5px;
+}
+.PiePagina{
+    text-align: center;
+    padding: 5px;
+}
+
+.agrupar{
+    width: 1200px;
+    margin: auto;
+}
+footer{
+    background: #20272e;
+    color: aliceblue;
+}

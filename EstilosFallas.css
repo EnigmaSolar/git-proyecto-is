@@ -1,0 +1,24 @@
+section, footer, nav, header{
+    border: 1px solid black;
+}
+.agrupar{
+    width: 1200px;
+    margin: auto;
+
+}
+nav{
+    text-align: center;
+    background: #cbd6e9;
+}
+header{
+    text-align: center;
+    background: rgb(0, 122, 243);
+    color: aliceblue;
+}
+div p{
+    text-align: center;
+}
+.footer{
+    background: #20272e;
+    border: 1px solid black;
+}
