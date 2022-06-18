@@ -10,79 +10,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
+    <!--Boostrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 </head>
 <body style="font-family: segoeUI;">
 
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="#">Sistema<span>Producción</span></a>
-
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
-
-            <nav>
-
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
-
-                <ul class="primary-nav">
-                    <li><a href="perfil.html">Perfil de usuario</a></li>
-                    <li><a href="./cronograma.html">Cronograma de actividades</a></li>
-                    <li><a href="./Reportefallas.html">Reporte de fallas</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <button class="btn btn-outline-primary btn-sm" data-id="1" data-toggle="modal" data-target="#login">Ingresar</button>
-                </ul>
-            </nav>
-
-            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="loginLabel">Ingrese al sistema</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+    <div class="navbar " style="width: -80%; text-align: center; bottom: -20px;">
+        <nav class="navbar navbar-expand-md bg-white navbar-withe" style="bottom: -20px;">
+            <a class="navbar-brand logo" href="indexOp.html">Sistema<span>Producción</span></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navb" class="navbar-collapse collapse hide">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./gestion_indicadores.html">Gestión de Indicadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./gestion_parametros.html">Elaborar de Parametros</a>
+                  </li>
+                
+              </ul>
+          
+              <ul class="nav navbar-nav navbar-right ml-auto">
+                <li class="nav-item">
+                    <div class="btn-group dropleft">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-person-circle "></i>
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./perfil.html">Perfil de usuario</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./index.html"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</a>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                      <form>
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="form1Example13">Ingrese su correo</label>
-                          <input type="email" id="form1Example13" class="form-control form-control-lg" placeholder="someone@example.com"/>
-                        </div>
-              
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                          <label class="form-label" for="form1Example23">Ingrese su contraseña</label>
-                          <input id="password" type="password" id="form1Example23" class="form-control form-control-lg" placeholder="Contraseña"/>
-                        </div>
-              
-                        <div class="d-flex justify-content-around align-items-center mb-4">
-                          <!-- Checkbox -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-                            <label class="form-check-label" for="form1Example3"> Recuerde mi contraseña </label>
-                          </div>
-                          <a href="#!">Olvidé la contraseña?</a>
-                        </div>
-              
-                        <!-- Submit button -->
-                        <a onclick="verificaClave()" id="enlace" href="#" type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" >Ingresar</a>
-
-                      </form>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-    
-            
-        </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </div>
+
+    <hr>
     <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">

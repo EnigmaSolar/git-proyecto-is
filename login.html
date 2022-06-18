@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
-    <title>Login Page</title>
-</head>
-<body>
-    <div class="main">
-        <p id="sign">Emanuel Plastic</p>
-        <span ><button class="choice">Operario</button></span>
-        <span ><button class="choice">Supervisor</button></span>
-        <span><button class="choice">Jefe de Planta</button></span>
-        <div id="data">
-        <p class="Dir">Usuario</p>
-        <input type="text" name="" class="input" placeholder="Ingrese nombre de usuario">
-    
-        <span class="Dir">Contraseña</span> <span id="forget">Olvidó la contraseña?</span>
-        <input type="password" name="" id="" class="input" placeholder="Ingrese su contraseña"> 
+    <head>
+        <!-- Nuevo Login -->
       
-    </div>
-        <a href="./index.html" class="btn btn-login">
-            <button id="Signbtn" class="btn btn-login">Ingrese</button>
-        </a>
-    </div>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--NavBar-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     
-    <div id="footer">
-        <span>Tiene algún problema? <button>Contáctenos</button></span>
-    </div>
-</body>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/login.css" />
+        <title>Ingrese a la Web</title>
+      </head>
+      <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Sistema<span>Producción</span></a>
+    
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+    
+                <nav>
+    
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+    
+                    <div class="float-right">
+                        <ul class="secondary-nav">
+                            <li class="go-premium-cta"><a href="login.html">Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+    
+                </nav>
+            </div>
+        </div>
+        <hr>
+
+        <section class="vh-100">
+            <div class="container h-100">
+              <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                  <img src="https://previews.123rf.com/images/tele52/tele521504/tele52150400009/38814721-%C3%ADcone-de-edif%C3%ADcio-de-f%C3%A1brica-isom%C3%A9trica-de-vetor.jpg"
+                    class="img-fluid" alt="factory">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                  <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form1Example13" class="form-control form-control-lg" placeholder="Username"/>
+                      <label class="form-label" for="form1Example13">Ingrese su usuario</label>
+                    </div>
+          
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form1Example23" class="form-control form-control-lg" placeholder="Contraseña"/>
+                      <label class="form-label" for="form1Example23">Ingrese su contraseña</label>
+                    </div>
+          
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                      <!-- Checkbox -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                        <label class="form-check-label" for="form1Example3"> Recuerde mi contraseña </label>
+                      </div>
+                      <a href="#!">Olvidé la contraseña?</a>
+                    </div>
+          
+                    <!-- Submit button -->
+                    <a href="./index.html">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          </section>
+      </body>
 </html>

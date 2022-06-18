@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!--NavBar-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <!--Boostrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <title>Gestion Reportes</title>
+</head>
+<body style="font-family: segoeUI;">
+    <div class="navbar">
+        <nav class="navbar navbar-expand-md bg-white navbar-withe">
+            <a class="navbar-brand logo" href="index.html">Sistema<span>Producción</span></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navb" class="navbar-collapse collapse hide">
+              <ul class="navbar-nav">
+                <li class="nav-item active current">
+                  <a class="nav-link" href="./ge_reportes.html">Gestión de Reportes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./elaboracion_cronograma.html">Elaborar Cronograma</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ReporteProduccion.html">Elaborar Reporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gestion_datos.html">Gestión de datos</a>
+                </li>
+              </ul>
+          
+              <ul class="nav navbar-nav navbar-right ml-auto">
+                <li class="nav-item">
+                    <div class="btn-group dropleft">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-person-circle "></i>
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./perfil.html">Perfil de usuario</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./index.html"><i class="bi bi-box-arrow-right"></i> Cerrar Sesión</a>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid user-jefe">
+        <h1>Hola Jonathan</h1>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="col-lg-6 sec1">
+            <h2>Reporte de produccion</h2>
+            <br>
+            <div class="text-center">
+                <img class="img-fluid im1" src="https://www.leanmanufacturingweb.com/wp-content/uploads/2020/07/Diagrama-de-Gantt-1024x847.jpg" width="350" height="350" title="ver cronograma" alt="Gantt">
+                <br><br>
+                <a href="./mod_prod_report.html" class="btn btn-login">
+                    <button type="button" class="btn btn-primary">Ver Reporte de Producción</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6 sec2">
+            <h2>Reporte de Fallas</h2>
+            <br>
+            <div class="text-center">
+                <img class="img-fluid im2" src="https://blog.comparasoftware.com/wp-content/uploads/2020/09/Fallas_enel_mantenimiento.png" width="350" height="350" title="ver reporte falla" alt="optimizacion">
+                <br><br>
+                <a href="./aprobar_reporte.html" class="btn btn-login">
+                    <button type="button" class="btn btn-primary">Ver Reporte de Fallas</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

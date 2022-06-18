@@ -4,45 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Gestion de datos Usuario</title>
+     <!-- MDB icon -->
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+     <!-- Font Awesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     />
+     <!-- Google Fonts Roboto -->
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+     />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
+    <title>Gestión Datos del Usuario</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/gestiondatos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="container">
-            <a class="logo" href="index.html">Sistema<span>Producción</span></a>
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">Sistema<span>Producción</span></a>
 
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
 
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+        <nav>
 
-                <ul class="primary-nav">
-                    <li ><a href="./gestion_reportes.html">Gestion de Reportes</a></li>
-                    <li><a href="#">Elaborar Cronograma</a></li>
-                    <li><a href="#">Elaborar reporte</a></li>
-                    <li class="current"><a href="#">Gestion de datos</a></li>
-                </ul>
-                <ul class="secondary-nav">
-                    <li><a href="#">Contactos</a></li>
-                    <li class="go-premium-cta"><a href="#">Iniciar sesión</a></li>
-                </ul>
-            </nav>
-        </div>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+            <ul class="primary-nav">
+                <li><a href="perfil.html">Perfil de usuario</a></li>
+                <li ><a href="./ge_reportes.html">Gestión de Reportes</a></li>
+                <li ><a href="./elaboracion_cronograma.html">Elaborar Cronograma</a></li>
+                <li><a href="./ReporteProduccion.html">Elaborar Reporte</a></li>
+                <li class="current"><a href="./gestion_datos.html">Gestión de datos</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li >
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+
+        </nav>
     </div>
-    <div class="tabla-box">
-        <h1 class="title">Lista de Usuarios</h1>
-        <article class="contenedor-buscar">
-            <h2 class="title2">Buscar:</h2>
-            <input type="text" class="gdinput">
-        </article>
-        
-    <table class="table table-hover table-bordered">
-        <thead>
-            <tr>
+</div>
+    <h1 style="text-align: center;">Lista de Usuarios</h1>
+    <div class="buscusu">
+      <h2>Buscar: </h2>
+      <input type="text" class="texto-buscusu">
+    </div>
+    <section class="tcronograma">
+        <table class="table table-bordered border-black table-hover">
+            <thead>
+              <tr class="table-dark">
                 <th scope="col">Id_Usuario</th>
                 <th scope="col">DNI</th>
                 <th scope="col">Nombres</th>
@@ -51,70 +71,165 @@
                 <th scope="col">Celular</th>
                 <th scope="col">Correo</th>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-               <td>00001</td>
-               <td>31678313</td>
-               <td>Juan</td>
-               <td>Perez</td>
-               <td>Av. Tupac Amaru 733</td>
-               <td>931342424</td>
-               <td>jperez@gmail.com</td>
-            </tr>
-            <tr>
-                <td>00000</td>
-                <td>000000</td>
-                <td>nombre</td>
-                <td>apellido</td>
-                <td>direccion</td>
-                <td>telefono</td>
-                <td>correo@dominio.com</td>
-            </tr>
-            <tr>
-                <td>00000</td>
-                <td>000000</td>
-                <td>nombre</td>
-                <td>apellido</td>
-                <td>direccion</td>
-                <td>telefono</td>
-                <td>correo@dominio.com</td>
-            </tr>
-            <tr>
-                <td>00000</td>
-                <td>000000</td>
-                <td>nombre</td>
-                <td>apellido</td>
-                <td>direccion</td>
-                <td>telefono</td>
-                <td>correo@dominio.com</td>
-            </tr>
-            <tr>
-                <td>00000</td>
-                <td>000000</td>
-                <td>nombre</td>
-                <td>apellido</td>
-                <td>direccion</td>
-                <td>telefono</td>
-                <td>correo@dominio.com</td>
-            </tr>
-            <tr>
-                <td>00000</td>
-                <td>000000</td>
-                <td>nombre</td>
-                <td>apellido</td>
-                <td>direccion</td>
-                <td>telefono</td>
-                <td>correo@dominio.com</td>
-            </tr>
-        </tbody>
-    </table>
-   </div>
-    <div class="contenedor-2">
-        <button class="btnlu" >Agregar Usuario</button>
-        <button class="btnlu" >Modificar Usuario</button>
-        <button class="btnlu" >Eliminar Usuario</button>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>00001</td>
+                    <td>31678313</td>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                    <td>Av. Tupac Amaru 733</td>
+                    <td>931342424</td>
+                    <td>jperez@gmail.com</td>
+                 </tr>
+                 <tr>
+                     <td>00000</td>
+                     <td>000000</td>
+                     <td>nombre</td>
+                     <td>apellido</td>
+                     <td>direccion</td>
+                     <td>telefono</td>
+                     <td>correo@dominio.com</td>
+                 </tr>
+                 <tr>
+                     <td>00000</td>
+                     <td>000000</td>
+                     <td>nombre</td>
+                     <td>apellido</td>
+                     <td>direccion</td>
+                     <td>telefono</td>
+                     <td>correo@dominio.com</td>
+                 </tr>
+                 <tr>
+                     <td>00000</td>
+                     <td>000000</td>
+                     <td>nombre</td>
+                     <td>apellido</td>
+                     <td>direccion</td>
+                     <td>telefono</td>
+                     <td>correo@dominio.com</td>
+                 </tr>
+                 <tr>
+                     <td>00000</td>
+                     <td>000000</td>
+                     <td>nombre</td>
+                     <td>apellido</td>
+                     <td>direccion</td>
+                     <td>telefono</td>
+                     <td>correo@dominio.com</td>
+                 </tr>
+                 <tr>
+                     <td>00000</td>
+                     <td>000000</td>
+                     <td>nombre</td>
+                     <td>apellido</td>
+                     <td>direccion</td>
+                     <td>telefono</td>
+                     <td>correo@dominio.com</td>
+                 </tr>
+            </tbody>
+        </table>
+        <div class="bacciones">
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal1">Agregar Usuario</button>  
+            <button type="button" class="btn btn-primary">Modificar Usuario</button>
+            <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal3">Eliminar Usuario</button>            
+        </div>
+    </section>
+    <div class="modal fade" id="ventanaModal1" tabindex="-1" role="dialog" aria-labelledby="ventanaModal1Title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ventanaModal1Title">Agregar Usuario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="false">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="contenedor-3">
+                  <div class="contenedorform">
+                      <div class="input-field">
+                          <label class="lbl" >DNI</label>
+                          <input type="text" placeholder="Ingrese DNI">
+                      </div>
+                      <div class="input-field">
+                          <label >Nombres</label>
+                          <input type="text" placeholder="Ingrese nombres">
+                      </div>
+                      <div class="input-field">
+                          <label>Apellidos</label>
+                          <input type="text" placeholder="Ingrese apellidos">
+                      </div>
+                      <div class="input-field">
+                          <label >Fecha de Nacimiento</label>
+                          <input type="text" placeholder="Ingrese fecha de nacimiento" >
+                      </div>
+                      <div class="input-field">
+                          <label >Direccion</label>
+                          <input type="text" placeholder="Ingrese direccion">
+                      </div>
+                      <div class="input-field">
+                          <label >Celular</label>
+                          <input type="text" placeholder="Ingrese celular">
+                      </div>
+                      <div class="input-field">
+                          <label >Correo</label>
+                          <input type="text" placeholder="Ingrese correo">
+                      </div>     
+                  </div> 
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                  </div>
+          </div>
+    
+  
+  <!-- Modal -->
+  <!-- <div class="modal fade" id="ventanaModal3" tabindex="-1" aria-labelledby="ventanaModal3Title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ventanaModal3">Eliminar Usuario</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Está seguro de querer eliminar el usuario?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Aceptar</button>
+          <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
     </div>
+  </div> -->
+    <style>
+      .tcronograma{
+        padding: 20px;
+      }
+      .bacciones{
+        
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .buscusu{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        justify-content: flex-end;
+        padding-right: 40px;
+      }
+      .texto-buscusu{
+        width: 150px;
+        height: 40px;
+      }
+      .contenedor-3{
+        max-width: 500px;
+        width:100%;
+     
+}
+      
 
+    </style>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 </html>

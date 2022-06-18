@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+     <!-- MDB icon -->
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+     <!-- Font Awesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     />
+     <!-- Google Fonts Roboto -->
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+     />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
+    <title>Gestión de parámetros del sistema</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="font-family: segoeUI;">
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">Sistema<span>Producción</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+
+        <nav>
+
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+            <ul class="primary-nav">
+                <li><a href="perfil.html">Perfil de usuario</a></li>
+                <li><a href="#">Gestión de indicadores</a></li>
+                <li class="current"><a href="./gestion_parametros.html">Gestión de parámetros del sistema</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li >
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+</div>
+    <h1 style="text-align: center;">Parámetros del sistema</h1>
+    <div class="gpcont">
+      <p>Seleccionar parámetro del sistema: </p>
+        <select class="selecciongp">
+            <option value="procesos">Procesos</option>
+            <option value="productos">Productos</option>
+            <option value="turnos">Turnos</option>
+            <option value="maquinarias">Maquinarias</option>
+            <option value="usuarios">Usuarios</option>
+          </select>
+    </div>
+    <section class="tparsistema">
+        <table class="table table-bordered border-black table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">Id_Proceso</th>
+              <th scope="col">nombreProceso</th>
+              <th scope="col">descripción</th>
+          </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>2001</td>
+                  <td>Extrusión</td>
+                  <td>Proceso industrial de fundir y moldear el plastico a flujo constante.</td>
+               </tr>
+               <tr>
+                   <td>2002</td>
+                   <td>Sellado</td>
+                   <td>Proceso donde se elaboran los paquetes de bobinas o fardos.</td>
+              
+               </tr>
+               <tr>
+                   <td>0000</td>
+                   <td>nombreproceso</td>
+                   <td>descripción</td>
+                   
+               </tr>
+               <tr>
+                   <td>00000</td>
+                   <td>nombreproceso</td>
+                   <td>descripción</td>   
+               </tr>
+               
+          </tbody>
+        </table>
+        <div class="gpbtns">
+          <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal1">Agregar proceso</button>
+          <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal3">Modificar proceso</button>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal3">Eliminar proceso</button>
+        </div>
+    </section>
+    
+  
+  
+   <div class="modal fade" id="ventanaModal1" tabindex="-1" aria-labelledby="ventanaModal1Title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ventanaModal1">Agregar proceso</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label>Nombre proceso:</label>
+          <input type="text">
+          <label>Descripción:</label>
+          <textarea></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Aceptar</button>
+          <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- <div class="modal fade" id="ventanaModal3" tabindex="-1" aria-labelledby="ventanaModal3Title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ventanaModal3">Eliminar proceso</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Está seguro de eliminar el proceso?
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Aceptar</button>
+          <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+    <style>
+      .tparsistema{
+        padding: 20px;
+      }
+      
+      .gpcont{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 10px;
+        
+      }
+      .gpbtns{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .selecciongp{
+        width: 80px;
+        height: 30px;
+      }
+
+    </style>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

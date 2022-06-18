@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gestionindicadores.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body style="font-family: segoeUI;">
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">Sistema<span>Producción</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+
+        <nav>
+
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Gestión de indicadores</a></li>
+                <li><a href="gestion_parametros.html">Gestión de parámetros</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li >
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+  </div>
+
+  <br><h1 style="text-align: center;">Indicadores de Producción</h1>
+
+  <div class="seleccionar" >
+    <form action="#">
+      <label for="seleccionar">Selecciona un año:</label>
+      <select name="anio" id="anio">
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
+    </form>
+  </div>
+
+
+    <!-- ====================== CANVAS ===================== -->
+    <div class="graficas">
+      <canvas id="chart"></canvas>
+
+      <canvas id="chart2"></canvas>
+
+      <canvas id="chart3" style="max-height: 300px;"></canvas>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" 
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

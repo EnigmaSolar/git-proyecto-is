@@ -1,11 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-    padding: 0 10px;
-}
+
 .contenedor-buscar{
     display:flex;
     flex-direction:row;
@@ -72,3 +65,14 @@ body{
 .gdinput{
     width: 150px;
 }
+.cerrarbtn{
+    border: none;
+}
+.contenedornav{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+
+}
+

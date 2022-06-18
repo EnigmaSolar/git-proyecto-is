@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+     <!-- MDB icon -->
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+     <!-- Font Awesome -->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     />
+     <!-- Google Fonts Roboto -->
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+     />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
+    <title>Elaboración Cronograma de actividades</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="index.html">Sistema<span>Producción</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Abrir navegación">
+
+        <nav>
+
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Cerrar navegación">
+
+            <ul class="primary-nav">
+                <li><a href="perfil.html">Perfil de usuario</a></li>
+                <li><a href="./ge_reportes.html">Gestion de Reportes</a></li>
+                <li class="current"><a href="./elaboracion_cronograma.html">Elaborar Cronograma</a></li>
+                <li><a href="./ReporteProduccion.html">Elaborar reporte</a></li>
+                <li><a href="./gestion_datos.html">Gestion de datos</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li >
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                  </a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+  </div>
+    <h1 style="text-align: center;">Elaborar cronograma de actividades</h1>
+    <div class="buscron">
+      <h5 class="codcron">Código de cronograma</h5>
+      <input type="text" class="textocron">
+    </div>
+    <section class="tcronograma">
+        <table class="table table-bordered border-black table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th scope="col">Operario</th>
+                <th scope="col">Turno</th>
+                <th scope="col">Proceso</th>
+                <th scope="col">Maquinaria</th>
+                <th scope="col">Fecha Inicio</th>
+                <th scope="col">Fecha Fin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Operario 1</td>
+                <td>Mañana</td>
+                <td>Proceso 2</td>
+                <td>MB128</td>
+                <td>02/05/2022</td>
+                <td>08/05/2022</td>
+              </tr>
+              <tr>
+                <td>Operario 2</td>
+                <td>Mañana</td>
+                <td>Proceso 1</td>
+                <td>Maquinaria</td>
+                <td>02/05/2022</td>
+                <td>08/05/2022</td>
+                
+              </tr>
+              <tr>
+                <td>Operario 3</td>
+                <td>Tarde</td>
+                <td>Proceso 2</td>
+                <td>Maquinaria</td>
+                <td>Fecha Inicio</td>
+                <td>Fecha Fin</td>
+                
+              </tr>
+              <tr>
+                <td>Operario 4</td>
+                <td>Tarde</td>
+                <td>Proceso 2</td>
+                <td>Maquinaria</td>
+                <td>Fecha Inicio</td>
+                <td>Fecha Fin</td>
+                
+              </tr>
+            </tbody>
+        </table>
+        <div class="elabcron">
+          <button type="button" class="btn btn-primary">  Editar  </button>
+          <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#ventanaModal">Nuevo Cronograma</button>
+        </div>
+    </section>
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ventanaModal" tabindex="-1" aria-labelledby="ventanaModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ventanaModal">Nuevo Cronograma</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 style="text-align:center;">Nuevo cronograma</h2>
+          <div class="contenedorGrupo">
+            <section class="seccionGrupo">
+              <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Agregar Operario
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Operario 1</a></li>
+                  <li><a class="dropdown-item" href="#">Operario 2</a></li>
+                  <li><a class="dropdown-item" href="#">Operario 3</a></li>
+                </ul>
+              </div>
+              <ul class="list-group listagrupo">
+                <li class="list-group-item">Operario 1</li>
+                <li class="list-group-item">Operario 2</li>
+                <li class="list-group-item">Operario 3</li>
+              </ul>
+            </section>
+            <section class="seccionGrupo">
+              <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Agregar maquina
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <ul class="list-group listagrupo">
+                <li class="list-group-item">Maquinaria 1</li>
+                <li class="list-group-item">Maquinaria 2</li>
+                <li class="list-group-item">Maquinaria 3</li>
+               
+              </ul>
+            </section>
+            <section class="seccionGrupo">
+              <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Agregar proceso
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <ul class="list-group listagrupo">
+                <li class="list-group-item">Proceso 1</li>
+                <li class="list-group-item">Proceso 2</li>
+                <li class="list-group-item">Proceso 3</li>
+                
+              </ul>
+            </section>
+          </div>
+          
+</section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">Guardar</button>
+          <button type="button" class="btn btn-light" data-mdb-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <style>
+      .tcronograma{
+        padding: 20px;
+      }
+      .elabcron{
+        
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .buscron{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        gap:10px;
+        margin-right: 50px;
+      }
+      .codcron{
+        width: 200px;
+      }
+      .textocron{
+        width: 150px;
+      }
+      .listagrupo{
+        width: 185px;
+      }
+      .seccionGrupo{
+        display:flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+      }
+      .contenedorGrupo{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-top: -40px;
+      }
+
+    </style>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
